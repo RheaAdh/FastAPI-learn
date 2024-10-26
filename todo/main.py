@@ -10,7 +10,6 @@ app = FastAPI()
 # Create database tables
 TodoModel.metadata.create_all(bind=engine)
 
-# Pydantic models
 class TodoBase(BaseModel):
     title: str
     completed: bool = False
@@ -56,3 +55,5 @@ def create_todo(todo: TodoBase, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(new_todo)
     return new_todo
+
+# pip3 install -r requirements.txt

@@ -1,0 +1,3 @@
+ORM - Object releational mapper
+
+OOP Code --> ORM (SqlAlchemy) --> SQL

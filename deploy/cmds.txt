@@ -1,0 +1,2 @@
+Install npm, node, pm2, venv
+pm2 start background.config.js
